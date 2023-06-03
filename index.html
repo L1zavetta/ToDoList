@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="form-section mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col col-8 mx-auto">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Add new task</h5>
+                <form name="addTask">
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="form-control"
+                    placeholder="Task title"
+                  />
+                  <input
+                    type="text"
+                    name="body"
+                    id="body"
+                    class="form-control mt-3"
+                    placeholder="Task body"
+                  />
+                  <button type="submit" id="add" class="btn btn-primary mt-4">Add task</button>
+                </form>
+              </div>
+            </div>
+            <button type="submit" id="allTasks" class="btn btn-primary mt-4">All tasks</button>
+            <button type="submit" id="completed" class="btn btn-primary mt-4">Completed tasks</button>
+            <button type="submit" id="notCompleted" class="btn btn-primary mt-4">Not completed tasks</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tasks-list-section mt-5">
+      <div class="container">
+        <ul id="taskList" class="list-group">
+        </ul>
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-8 mx-auto" id="message">
+          </div>
+        </div>
+      </div>
+    <script src="app.js"></script>
+  </body>
+</html>
