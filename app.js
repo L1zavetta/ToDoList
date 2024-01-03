@@ -18,7 +18,7 @@ document.getElementById('completed')
       renderTasks(tasks.filter(el => el.done));
     })
 
-document.getElementById('notCompleted')
+document.getElementById('uncompleted')
     .addEventListener('click', function () {
       renderTasks(tasks.filter(el => !el.done));
     })
